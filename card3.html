@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Asignacion Bootstrap">
+    <meta name="author" content="Eydan Mora">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <title>Phill Spencer</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5968/5968672.png">
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS PROPIO -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="fas fa-gamepad me-2"></i>
+                Notigamer 2026
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <!-- LINKS PRINCIPALES A LA IZQUIERDA -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Enlaces.html">Enlaces</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contactanos.html">Contactenos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ms-2" onclick="cambiarModo()">Cambiar modo</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#privacidadModal">
+                            Políticas y Privacidad
+                        </a>
+                    </li>
+
+                </ul>
+
+                <!-- ICONOS REDES SOCIALES A LA DERECHA -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="https://www.instagram.com/hypervoidyt/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="https://x.com/ElGuerreroGame7" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="https://www.youtube.com/@Voitbit-AMV" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="modal fade" id="privacidadModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Políticas de Privacidad</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <h6>Politicas de privacidad</h6>
+                    <p>La información recopilada se utiliza únicamente para mejorar el contenido del sitio y ofrecer una
+                        mejor experiencia a los visitantes.</p>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL POLITICAS -->
+    <div class="modal fade" id="privacidadModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Políticas de Privacidad</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <h6>Políticas de privacidad</h6>
+                    <p>La información recopilada se utiliza únicamente para mejorar el contenido del sitio y ofrecer una
+                        mejor experiencia a los visitantes.</p>
+                </div>
+
+                <div class="modal-footer">
+                    <a href="politica.html" class="btn btn-primary">Más información</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="carouselExampleFade container">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade mt-5" data-bs-ride="carousel"
+            data-bs-interval="2000" data-bs-pause="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/45.jpg" class="d-block w-100" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/phill43.jpg" class="d-block w-100" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/3.webp" class="d-block w-100" alt="Slide 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <main class="bg-white">
+
+            <h1 class="text-center text-dark"
+                style="font-family: Arial; font-weight: bold; max-width: 700px; margin: auto;">
+                <strong>Adiós a Phil Spencer: el jefe de Xbox se retira tras casi 40 años en Microsoft</strong>
+            </h1>
+            <br>
+
+            <div class="article-container">
+
+                <p class="article-text text-dark">
+                    Llegó a la compañía de Microsoft a finales de los años 80 y ha sido una de las figuras más importantes
+                    en la
+                    historia de Xbox.
+                </p>
+
+                <p class="article-text text-dark">
+                    Noticia de impacto para cerrar la semana: Phil Spencer abandonará Microsoft el próximo lunes 23 de
+                    febrero,
+                    tal y como ha publicado en exclusiva el medio IGN. El actual jefe de Xbox se retira tras 38 años en
+                    el
+                    gigante americano, en el que ha desarrollado un rol clave en su división de videojuegos,
+                    especialmente
+                    durante los últimos años.
+
+                <p class="article-text text-dark">
+                    El medio en cuestión ha compartido el correo que Satya Nadella, CEO de Microsoft, ha enviado a los
+                    empleados
+                    de la compañía: “Quiero agradecer a Phil por su extraordinario liderazgo. En sus más de 38 años en
+                    Microsoft, 12 de ellos liderando el gaming, Phil ayudó a transformar lo que hacemos y cómo lo
+                    hacemos”.
+
+
+                <div class="text-center">
+                    <img src="img/5.avif" alt="Resident Evil Requiem" class="img-fluid">
+                </div>
+                <br>
+                <h1 class="text-center text-dark"
+                    style="font-family: Arial; font-weight: 900; max-width: 700px; margin: auto;">
+                    Sarah Bond deja Xbox y Matt Booty cambia de rol
+                </h1>
+                <br>
+                <p class="article-text text-dark">
+                    Además de la retirada de Phil Spencer, parece que las cosas van a cambiar drásticamente en la
+                    compañía, ya que <strong>Sarah Bond</strong>, presidenta de Microsoft, ha renunciado a su puesto, el cual será
+                    ocupado por <strong>Asha Sharma</strong>, la actual jefa de producto de CoreAI de Microsoft. Por si fuese poco, <strong>Matt
+                    Booty</strong>, hasta ahora jefe de Xbox Game Studios, ascenderá al puesto de Chief Content Officer (máximo
+                    responsable de contenidos) y trabajará codo con codo con Sharma para poner sobre la mesa nuevas
+                    ideas de negocio.
+                </p>
+
+
+        </main>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script> function cambiarModo() {
+                document.body.classList.toggle("dark-mode");
+            }
+        </script>
+
+        <script src="script.js"></script>
+
+        <footer class="bg-dark text-white mt-5 pt-4 pb-3">
+            <div class="container">
+
+                <div class="row justify-content-center">
+
+                    <div class="col-md-6 text-center">
+
+                        <h5 class="mb-3">Información</h5>
+
+                        <div class="accordion accordion-flush" id="accordionInfo">
+
+                            <!-- Quienes Somos -->
+                            <div class="accordion-item bg-dark text-white">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-dark text-white" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                        Quienes Somos
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionInfo">
+                                    <div class="accordion-body bg-dark text-white">
+                                        Somos una plataforma dedicada a noticias y contenido sobre videojuegos,
+                                        con el objetivo de informar a los jugadores sobre los lanzamientos,
+                                        novedades y eventos más importantes de la industria.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Misión -->
+                            <div class="accordion-item bg-dark text-white">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-dark text-white" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseMision">
+                                        Misión
+                                    </button>
+                                </h2>
+                                <div id="collapseMision" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionInfo">
+                                    <div class="accordion-body bg-dark text-white">
+                                        Informar a la comunidad gamer sobre las noticias más importantes
+                                        del mundo de los videojuegos de forma clara, rápida y accesible.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Visión -->
+                            <div class="accordion-item bg-dark text-white">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-dark text-white" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseVision">
+                                        Visión
+                                    </button>
+                                </h2>
+                                <div id="collapseVision" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionInfo">
+                                    <div class="accordion-body bg-dark text-white">
+                                        Convertirnos en una referencia para los jugadores que buscan
+                                        información confiable sobre la industria del videojuego.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Valores -->
+                            <div class="accordion-item bg-dark text-white">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed bg-dark text-white" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseValores">
+                                        Valores
+                                    </button>
+                                </h2>
+                                <div id="collapseValores" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionInfo">
+                                    <div class="accordion-body bg-dark text-white">
+                                        Pasión por los videojuegos, respeto a la comunidad,
+                                        información verificada y compromiso con el contenido.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="border-light">
+
+            <div class="text-center">
+                <small>© 2026 Notigamer - Todos los derechos reservados</small>
+            </div>
+
+        </footer>
+
+<script src="script.js"></script>
+
+</body>

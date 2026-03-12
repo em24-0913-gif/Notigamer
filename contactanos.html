@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NeuroReto. curiosidades y retos sobre el mundo y la ciencia">
+    <meta name="keywords" content="quiz, curiosidades, ciencia, retos, cultura general">
+    <meta name="author" content="Javier Muñoz">
+    <title>Contactenos</title>
+
+    <!-- link bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- icono de la pagina -->
+    <link rel="icon" type="image/x-icon" href="imagenes/logo2-removebg-preview.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- referencia a estilos -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="fas fa-gamepad me-2"></i>
+                Notigamer 2026
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <!-- LINKS PRINCIPALES A LA IZQUIERDA -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Enlaces.html">Enlaces</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contactanos.html">Contactenos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ms-2" onclick="cambiarModo()">Cambiar modo</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#privacidadModal">
+                            Políticas y Privacidad
+                        </a>
+                    </li>
+
+                </ul>
+
+                <!-- ICONOS REDES SOCIALES A LA DERECHA -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="https://www.instagram.com/hypervoidyt/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="https://x.com/ElGuerreroGame7" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="https://www.youtube.com/@Voitbit-AMV" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- MODAL POLITICAS -->
+    <div class="modal fade" id="privacidadModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Políticas de Privacidad</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <h6>Políticas de privacidad</h6>
+                    <p>La información recopilada se utiliza únicamente para mejorar el contenido del sitio y ofrecer una
+                        mejor experiencia a los visitantes.</p>
+                </div>
+
+                <div class="modal-footer">
+                    <a href="politica.html" class="btn btn-primary">Más información</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <main>
+        <section class="info-section text-light container mt-5">
+
+            <div class="info bg-light border rounded p-4 shadow w-50 mx-auto mt-5">
+                <h2 class="text-center">Contáctenos</h2>
+            </div>
+            <br>
+            <br>
+            <form action="https://formsubmit.co/em24-0913@unphu.edu.do" method="POST">
+
+                <!-- configuraciones ocultas -->
+                <input type="hidden" name="_subject" value="Nuevo mensaje desde Notigamer">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://em24-0913-gif.github.io/Home.html/gracias.html">
+
+
+                <!-- correo del usuario -->
+                <div class="mb-3">
+                    <label class="form-label text-dark">Tu correo</label>
+                    <input type="email" class="form-control" name="correo" placeholder="nombre@ejemplo.com" required>
+                </div>
+
+                <!-- mensaje -->
+                <div class="mb-3">
+                    <label class="form-label text-dark">Envíanos tus comentarios</label>
+                    <textarea class="form-control" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."
+                        required></textarea>
+                </div>
+
+                <!-- botón -->
+                <button type="submit" class="btn btn-primary w-100">
+                    Enviar mensaje
+                </button>
+
+
+            </form>
+
+
+            <div class="text-center text-dark mt-4">
+                <p>También puedes escribirnos directamente por correo:</p>
+
+                <a href="mailto:jm24-0912@unphu.edu.do?subject=Consulta sobre NeuroReto&body=Hola, tengo una pregunta sobre..."
+                    class="btn btn-primary">
+                    Enviar correo directo
+                </a>
+            </div>
+
+    </main>
+
+    </section>
+
+
+
+    <script> function cambiarModo() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+
+    <script src="script.js"></script>
+
+    <!-- footer -->
+    <footer class="bg-dark text-white mt-5 pt-4 pb-3">
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-md-6 text-center">
+
+                    <h5 class="mb-3">Información</h5>
+
+                    <div class="accordion accordion-flush" id="accordionInfo">
+
+                        <!-- Quienes Somos -->
+                        <div class="accordion-item bg-dark text-white">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-dark text-white" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    Quienes Somos
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionInfo">
+                                <div class="accordion-body bg-dark text-white">
+                                    Somos una plataforma dedicada a noticias y contenido sobre videojuegos,
+                                    con el objetivo de informar a los jugadores sobre los lanzamientos,
+                                    novedades y eventos más importantes de la industria.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Misión -->
+                        <div class="accordion-item bg-dark text-white">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-dark text-white" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseMision">
+                                    Misión
+                                </button>
+                            </h2>
+                            <div id="collapseMision" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionInfo">
+                                <div class="accordion-body bg-dark text-white">
+                                    Informar a la comunidad gamer sobre las noticias más importantes
+                                    del mundo de los videojuegos de forma clara, rápida y accesible.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Visión -->
+                        <div class="accordion-item bg-dark text-white">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-dark text-white" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseVision">
+                                    Visión
+                                </button>
+                            </h2>
+                            <div id="collapseVision" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionInfo">
+                                <div class="accordion-body bg-dark text-white">
+                                    Convertirnos en una referencia para los jugadores que buscan
+                                    información confiable sobre la industria del videojuego.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Valores -->
+                        <div class="accordion-item bg-dark text-white">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-dark text-white" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseValores">
+                                    Valores
+                                </button>
+                            </h2>
+                            <div id="collapseValores" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionInfo">
+                                <div class="accordion-body bg-dark text-white">
+                                    Pasión por los videojuegos, respeto a la comunidad,
+                                    información verificada y compromiso con el contenido.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="border-light">
+
+        <div class="text-center">
+            <small>© 2026 Notigamer - Todos los derechos reservados</small>
+        </div>
+
+    </footer>
+
+
+    <!-- script bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

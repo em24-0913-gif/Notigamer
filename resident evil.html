@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Asignacion Bootstrap">
+    <meta name="author" content="Eydan Mora">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <title>Resident Evil</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5968/5968672.png">
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- CSS PROPIO -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-p1V..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="fas fa-gamepad me-2"></i>
+                Notigamer 2026
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <!-- LINKS PRINCIPALES A LA IZQUIERDA -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Enlaces.html">Enlaces</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contactanos.html">Contactenos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ms-2" onclick="cambiarModo()">Cambiar modo</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#privacidadModal">
+                            Políticas y Privacidad
+                        </a>
+                    </li>
+
+                </ul>
+
+                <!-- ICONOS REDES SOCIALES A LA DERECHA -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="https://www.instagram.com/hypervoidyt/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="https://x.com/ElGuerreroGame7" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="https://www.youtube.com/@Voitbit-AMV" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- MODAL POLITICAS -->
+    <div class="modal fade" id="privacidadModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Políticas de Privacidad</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <h6>Políticas de privacidad</h6>
+                    <p>La información recopilada se utiliza únicamente para mejorar el contenido del sitio y ofrecer una
+                        mejor experiencia a los visitantes.</p>
+                </div>
+
+                <div class="modal-footer">
+                    <a href="politica.html" class="btn btn-primary">Más información</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="carouselExampleFade container">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade mt-5" data-bs-ride="carousel"
+            data-bs-interval="2000" data-bs-pause="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/RE1.jpg" class="d-block w-100" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/RE2.webp" class="d-block w-100" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/RE3.jpg" class="d-block w-100" alt="Slide 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <main class="bg-white">
+
+            <h1 class="text-center text-dark"
+                style="font-family: Arial; font-weight: bold; max-width: 700px; margin: auto;">
+                Resident Evil Requiem: Un homenaje a casi 30 años de horror
+            </h1>
+
+
+            <div class="article-container">
+
+                <p class="article-text text-dark">
+                    Con Resident Evil Requiem, Capcom logra lo que parecía imposible: unificar todas las eras de su
+                    franquicia estrella en una sola experiencia cohesiva.
+                </p>
+
+                <p class="article-text text-dark">
+                    EEl noveno título numerado de la saga de survival horror Resident Evil no es solo un juego más en la
+                    cronología; sino una entrega que no refleja más que respeto para los fans que hemos estado ahí desde
+                    1996, cuando el equipo dirigido por Shinji Mikami creó el primer capítulo para PlayStation, hace
+                    casi 30 años.
+
+                <p class="article-text text-dark">
+                    Requiem no es solo un juego innovador con un detalle gráfico que te quita el aliento; es una
+                    experiencia que te obliga a enfrentar los fantasmas de una historia que creíamos cerrada y que
+                    comenzó con Oswell E. Spencer, Edward Ashford y James Marcus.
+
+                <p class="article-text text-dark">
+                    Desde el primer minuto, queda claro que este no es un viaje cualquiera. La atmósfera es tan densa
+                    que se siente casi física, especialmente cuando el juego nos transporta de vuelta a las ruinas de
+                    Raccoon City.
+                </p>
+
+                <p class="article-text text-dark">
+                    Ver la ciudad que lo empezó todo reducida a cenizas y recuerdos bajo la tecnología actual no es solo
+                    un golpe de nostalgia; es una declaración de intenciones por parte de un equipo de desarrollo que
+                    volcó su dedicación y su respeto por los fans en cada milímetro del escenario. Aquí, el horror no
+                    solo se ve, sino que se siente en cada enemigo que te acecha en las sombras.
+                </p>
+
+                <div class="text-center">
+                    <img src="img/imagen12.webp" alt="Resident Evil Requiem" class="img-fluid">
+                </div>
+
+                <h1 class="text-center text-dark"
+                    style="font-family: Arial; font-weight: 900; max-width: 700px; margin: auto;">
+                    Las sombras de Umbrella
+                </h1>
+
+                <p class="article-text text-dark">
+                    La narrativa es, sin duda, uno de los pilares más sólidos de esta entrega. La historia resulta
+                    fascinante al revelar detalles cruciales que profundizan en la historia que comenzó con los
+                    fundadores de Umbrella.
+                </p>
+
+                <p class="article-text text-dark">
+                    Para quienes hemos seguido el lore de la saga, estas revelaciones son el tejido conectivo que
+                    faltaba para comprender la magnitud de la tragedia biológica desde su origen.
+                <p class="article-text text-dark">
+                    Este peso argumental se siente especialmente vivo cuando nos enfrentamos al emblemático regreso a
+                    las ruinas de Raccoon City, un viaje de nostalgia pura que, con la potencia del PlayStation 5 Pro,
+                    resulta más aterrador y vívido que nunca.
+
+                <div class="text-center">
+                    <img src="img/RE4.webp" alt="Resident Evil Requiem" class="img-fluid">
+                </div>
+
+                <h1 class="text-center text-dark"
+                    style="font-family: Arial; font-weight: 900; max-width: 700px; margin: auto;">
+                    Gráficos de otro nivel
+                </h1>
+
+                <p class="article-text text-dark">
+                    El <strong>detalle gráfico</strong> de Requiem roza lo irreal: desde el sudor en la frente de los
+                    protagonistas y las arrugas en el rostro de Leon, hasta la forma en que la sangre se riega en
+                    combate.
+                </p>
+
+                <p class="article-text text-dark">
+                    Cada textura y manejo de la luz, desde las paredes en las instalaciones del <strong>Rhodes Hill
+                        Chronic Care Center</strong> hasta la iluminación dinámica que juega con nuestra mente,
+                    demuestra una dedicación absoluta por parte de los desarrolladores.
+
+                <div class="text-center">
+                    <img src="img/RE5.webp" alt="Resident Evil Requiem" class="img-fluid">
+                </div>
+
+                <h1 class="text-center text-dark"
+                    style="font-family: Arial; font-weight: 900; max-width: 700px; margin: auto;">
+                    Horror en español latino
+                </h1>
+
+                <p class="article-text text-dark">
+                    Antes de entrar en las mecánicas, hay que celebrar un hito histórico para nuestra región. Por
+                    primera vez en la historia de la franquicia, Leon S. Kennedy tiene voz oficial en español latino (en
+                    simultáneo con el lanzamiento del juego) a cargo del mexicano <strong>Gerardo García</strong>, al
+                    igual que Grace, interpretada por <strong>Susana Moreno</strong>.
+                </p>
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="img/GG.jpg" class="card-img-top" alt="Juego 1">
+                                <div class="card-body">
+                                    <p class="card-text">Gerardo Garcia.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="img/OIP.jpg" class="card-img-top" alt="Juego 2">
+                                <div class="card-body">
+                                    <p class="card-text">Susana Moreno.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="article-text text-dark">
+                            Además, el juego en su totalidad cuenta con voces en nuestro idioma, destacando un trabajo
+                            de localización impecable que nos permite sumergirnos en el horror sin barreras.
+
+                            Es un detalle que los fans en Latinoamérica esperábamos desde hace décadas y que Capcom
+                            finalmente ha hecho realidad, con una calidad de la actuación de voz sobresaliente.
+
+
+                        <div class="text-center">
+                            <img src="img/RE6.webp" alt="Resident Evil Requiem" class="img-fluid">
+                        </div>
+
+                        <h1 class="text-center text-dark"
+                            style="font-family: Arial; font-weight: 900; max-width: 700px; margin: auto;">
+                            Dos caras de la misma moneda
+                        </h1>
+
+                        <p class="article-text text-dark">
+                            En cuanto a la jugabilidad, el título nos ofrece una dualidad magistral a través de sus
+                            protagonistas, entregando dos experiencias que se complementan, pero se sienten radicalmente
+                            distintas.
+                        </p>
+
+                        <p class="article-text text-dark">
+                            Al tomar el control de <strong>Leon S. Kennedy</strong>, el título se convierte en un festín
+                            de <strong>acción, disparos y movimientos espectaculares</strong>. Es el Leon que amamos y
+                            conocemos: capaz, ágil y listo para enfrentar hordas de enemigos con estilo, permitiéndonos
+                            ejecutar movimientos espectaculares que nos hacen sentir en control de la situación.
+
+                        <p class="article-text text-dark">
+                            Por el contrario, las secciones con <strong>Grace representan el survival horror</strong> en
+                            su estado más puro. Con ella, el ambiente se vuelve tenso y claustrofóbico; la gestión de
+                            recursos resulta vital y el sigilo es tu única herramienta real de supervivencia.
+
+                        <p class="article-text text-dark">
+                            Al ser una analista del FBI, con menor experiencia en el campo que Leon, con Grace te verás
+                            obligado a decidir si vale la pena gastar tu munición y disparar esa última bala o si lo
+                            mejor es escabullirte con sigilo y huir para sobrevivir un minuto más.
+                        </p>
+
+                        <p class="article-text text-dark">
+                            Al jugarlo, opté por respetar el diseño original, así que experimenté la aventura con
+                            <strong>Leon en tercera persona y la tensión con Grace en primera persona</strong>, lo que
+                            contribuyó a preservar la forma en que Requiem fue concebido.
+                        </p>
+
+                        <p class="article-text text-dark">
+                            Sin embargo, los modos de vista en primera o tercera persona se pueden cambiar en cualquier
+                            momento para ambos personajes, permitiéndote disfrutarlo de la manera en la que te sientas
+                            más cómodo.
+                        </p>
+
+                    </div>
+                </div>
+                <br>
+                <div class="text-center">
+                    <img src="img/RE7.webp" alt="Resident Evil Requiem" class="img-fluid">
+                </div>
+                <br>
+                <h1 class="text-center text-dark"
+                    style="font-family: Arial; font-weight: 900; max-width: 700px; margin: auto;">
+                    Resident Evil Requiem - Gameplay
+                </h1>
+                <br>
+                <p class="article-text text-dark">
+                    En cuanto a los desafíos y trofeos, son muchos y variados, lo que le da una gran rejugabilidad para
+                    obtenerlos todos.
+                </p>
+
+                <p class="article-text text-dark">
+                    La gestión de espacio es otro de los clásicos que conserva Requiem. Este apartado es más limitado
+                    para Grace, al igual que la variedad de armas. Sin embargo, puedes ampliar el espacio con riñoneras
+                    que irás encontrando a lo largo del juego o emplear el viejo y conocido baúl.
+
+                <p class="article-text text-dark">
+                    Leon dispone de más espacio de almacenamiento y de una mayor variedad de armamento que puedes
+                    mejorar, aunque no puede utilizar baúles, por lo que deberás decidir si quieres conservar todas tus
+                    armas o vender algunas.
+
+                <div class="text-center">
+                    <img src="img/RE8.webp" alt="Resident Evil Requiem" class="img-fluid">
+                </div>
+
+                <h1 class="text-center text-dark"
+                    style="font-family: Arial; font-weight: 900; max-width: 700px; margin: auto;">
+                    Enemigos que no dan tregua
+                </h1>
+                <br>
+                <p class="article-text text-dark">
+                    El diseño de enemigos y las mecánicas de juego son una amalgama de los mejores momentos de la
+                    franquicia. El gameplay evoca la estructura de Resident Evil 2, pero integra la verticalidad de
+                    Resident Evil 4 y la atmósfera opresiva de Resident Evil 7. Aquí nos enfrentaremos a zombis que no
+                    han perdido la conciencia del todo, lo que genera una atmósfera perturbadora cuando los ves ocupados
+                    en tareas cotidianas que solían hacer cuando eran humanos, como limpiar, cocinar e incluso cantar.
+                </p>
+
+                <p class="article-text text-dark">
+                    Además, aquí te enfrentarás a criaturas y armas biológicas rápidas como <strong>los Blister
+                        Heads</strong> y otros monstruos que nos recordarán a viejos conocidos.
+                <p class="article-text text-dark">
+                    Para elevar la tensión, regresan los <strong>enemigos inmensos tipo Stalker</strong>, que nos
+                    perseguirán incansablemente en zonas específicas de la partida, obligándonos a estar en constante
+                    movimiento.
+
+                <div id="carouselExampleFade" class="carousel slide carousel-fade mt-5" data-bs-ride="carousel"
+                    data-bs-interval="1500">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/RE9.jpg" class="d-block w-100" alt="Slide 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/RE10.avif" class="d-block w-100" alt="Slide 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/RE11.jpg" class="d-block w-100" alt="Slide 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    <br>
+                    <h1 class="text-center text-dark"
+                        style="font-family: Arial; font-weight: 800; max-width: 700px; margin: auto;">
+                        Pros
+                    </h1>
+                    <br>
+                    <ul style="color: black;">
+                        <li style="margin-bottom: 12px;">El contraste entre la acción de Leon y el survival horror de
+                            Grace mantiene el ritmo fresco durante todo el juego.</li>
+
+                        <li style="margin-bottom: 12px;">El nivel de detalle en los personajes, enemigos y mapas.</li>
+
+                        <li style="margin-bottom: 12px;">Las revelaciones de la historia que cierran brechas
+                            argumentales de años.</li>
+
+                        <li style="margin-bottom: 12px;">La recreación de las ruinas de Raccoon City y de la RPD.</li>
+
+                        <li style="margin-bottom: 12px;">La dificultad y la resolución de puzzles, que son
+                            verdaderamente desafiantes.</li>
+
+                        <li style="margin-bottom: 12px;">Las batallas contra los distintos jefes.</li>
+                    </ul>
+                    <br>
+                    <h1 class="text-center text-dark"
+                        style="font-family: Arial; font-weight: 800; max-width: 700px; margin: auto;">
+                        Contras
+                    </h1>
+                    <br>
+                    <ul style="color: black;">
+                        <li style="margin-bottom: 12px;">Algunos encuentros con los enemigos pueden resultar frustrantes
+                            si no gestionas bien tus recursos.</li>
+
+                        <li style="margin-bottom: 12px;">Para quienes están acostumbrados a la acción, puede resultar
+                            difícil adaptarse al ritmo pausado de las secciones de supervivencia.</li>
+                    </ul>
+                    <br>
+                    <h1 class="text-center text-dark"
+                        style="font-family: Arial; font-weight: 800; max-width: 700px; margin: auto;">
+                        Veredicto
+                    </h1>
+                    <br>
+                    <p class="article-text text-dark">
+                        Resident Evil Requiem es una obra maestra del terror moderno que no olvida sus raíces. Capcom ha
+                        logrado equilibrar la acción cinematográfica con el horror más puro y claustrofóbico, entregando
+                        una historia que finalmente hace justicia al legado de la saga. Con un apartado visual de nueva
+                        generación y un respeto inmenso por su propia historia es, sin lugar a dudas, una experiencia
+                        obligatoria para cualquier amante del género.
+                    </p>
+
+        </main>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script> function cambiarModo() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+
+    <footer class="bg-dark text-white mt-5 pt-4 pb-3">
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-md-6 text-center">
+
+                    <h5 class="mb-3">Información</h5>
+
+                    <div class="accordion accordion-flush" id="accordionInfo">
+
+                        <!-- Quienes Somos -->
+                        <div class="accordion-item bg-dark text-white">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-dark text-white" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    Quienes Somos
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionInfo">
+                                <div class="accordion-body bg-dark text-white">
+                                    Somos una plataforma dedicada a noticias y contenido sobre videojuegos,
+                                    con el objetivo de informar a los jugadores sobre los lanzamientos,
+                                    novedades y eventos más importantes de la industria.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Misión -->
+                        <div class="accordion-item bg-dark text-white">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-dark text-white" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseMision">
+                                    Misión
+                                </button>
+                            </h2>
+                            <div id="collapseMision" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionInfo">
+                                <div class="accordion-body bg-dark text-white">
+                                    Informar a la comunidad gamer sobre las noticias más importantes
+                                    del mundo de los videojuegos de forma clara, rápida y accesible.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Visión -->
+                        <div class="accordion-item bg-dark text-white">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-dark text-white" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseVision">
+                                    Visión
+                                </button>
+                            </h2>
+                            <div id="collapseVision" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionInfo">
+                                <div class="accordion-body bg-dark text-white">
+                                    Convertirnos en una referencia para los jugadores que buscan
+                                    información confiable sobre la industria del videojuego.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Valores -->
+                        <div class="accordion-item bg-dark text-white">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-dark text-white" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseValores">
+                                    Valores
+                                </button>
+                            </h2>
+                            <div id="collapseValores" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionInfo">
+                                <div class="accordion-body bg-dark text-white">
+                                    Pasión por los videojuegos, respeto a la comunidad,
+                                    información verificada y compromiso con el contenido.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="border-light">
+
+        <div class="text-center">
+            <small>© 2026 Notigamer - Todos los derechos reservados</small>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
